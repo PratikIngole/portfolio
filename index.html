@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Morgan — Web Developer</title>
+  <meta name="description" content="Portfolio of Alex Morgan, a full-stack web developer crafting purposeful digital experiences." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAV ────────────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-logo">AM<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact" class="nav-cta">Let's talk</a></li>
+    </ul>
+    <button class="nav-burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mm-link">About</a>
+    <a href="#skills" class="mm-link">Skills</a>
+    <a href="#projects" class="mm-link">Projects</a>
+    <a href="#contact" class="mm-link">Contact</a>
+  </div>
+
+  <!-- ── HERO ───────────────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text" aria-hidden="true">DEV</div>
+    <div class="hero-inner">
+      <div class="hero-left reveal">
+        <p class="eyebrow mono">Full-Stack Developer · Based in San Francisco</p>
+        <h1 class="hero-headline">
+          I build things<br />
+          for the <em>web</em><br />
+          that <span class="underline-amber">matter.</span>
+        </h1>
+        <p class="hero-sub">
+          Crafting fast, accessible, and beautiful digital experiences
+          from pixel to server — with eight years of scars and stories to prove it.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">See my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-n">8+</span><span class="stat-l">Years exp.</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-n">40+</span><span class="stat-l">Projects shipped</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-n">12</span><span class="stat-l">Happy clients</span></div>
+        </div>
+      </div>
+      <div class="hero-right reveal reveal-delay">
+        <div class="photo-frame">
+          <div class="photo-placeholder" aria-label="Profile photo of Alex Morgan">
+            <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="100" cy="82" r="46" fill="#2a2010"/>
+              <ellipse cx="100" cy="195" rx="72" ry="48" fill="#2a2010"/>
+            </svg>
+            <span class="photo-initials">AM</span>
+          </div>
+          <div class="photo-tag mono">available for freelance</div>
+          <div class="photo-dot"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint mono" aria-hidden="true">scroll ↓</div>
+  </section>
+
+  <!-- ── TICKER ─────────────────────────────────────────────── -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker">
+      <span>React</span><span class="sep">◆</span>
+      <span>TypeScript</span><span class="sep">◆</span>
+      <span>Node.js</span><span class="sep">◆</span>
+      <span>PostgreSQL</span><span class="sep">◆</span>
+      <span>Next.js</span><span class="sep">◆</span>
+      <span>GraphQL</span><span class="sep">◆</span>
+      <span>Docker</span><span class="sep">◆</span>
+      <span>AWS</span><span class="sep">◆</span>
+      <span>Figma</span><span class="sep">◆</span>
+      <span>TailwindCSS</span><span class="sep">◆</span>
+      <!-- duplicate for seamless loop -->
+      <span>React</span><span class="sep">◆</span>
+      <span>TypeScript</span><span class="sep">◆</span>
+      <span>Node.js</span><span class="sep">◆</span>
+      <span>PostgreSQL</span><span class="sep">◆</span>
+      <span>Next.js</span><span class="sep">◆</span>
+      <span>GraphQL</span><span class="sep">◆</span>
+      <span>Docker</span><span class="sep">◆</span>
+      <span>AWS</span><span class="sep">◆</span>
+      <span>Figma</span><span class="sep">◆</span>
+      <span>TailwindCSS</span><span class="sep">◆</span>
+    </div>
+  </div>
+
+  <!-- ── ABOUT ──────────────────────────────────────────────── -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="mono label-tag">About me</span>
+        <h2 class="section-title">More than just code.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-lead">
+            I'm Alex — a full-stack developer who believes software should feel inevitable.
+            Not clever for its own sake. Not over-engineered. Just exactly right.
+          </p>
+          <p>
+            My journey started with a broken PHP forum theme and a 56k modem. Since then I've shipped
+            production systems for fintech startups, e-commerce platforms handling millions in GMV,
+            and a handful of side projects that taught me more than any job ever could.
+          </p>
+          <p>
+            Outside the terminal I shoot 35mm film, contribute to open-source, and argue (gently)
+            that CSS is actually elegant when you understand it.
+          </p>
+        </div>
+        <div class="about-details reveal reveal-delay">
+          <div class="detail-group">
+            <h3 class="mono detail-heading">Education</h3>
+            <div class="timeline">
+              <div class="tl-item">
+                <span class="tl-year mono">2014–2016</span>
+                <div>
+                  <strong>M.S. Computer Science</strong>
+                  <p>Stanford University · Focus on Human-Computer Interaction</p>
+                </div>
+              </div>
+              <div class="tl-item">
+                <span class="tl-year mono">2010–2014</span>
+                <div>
+                  <strong>B.S. Software Engineering</strong>
+                  <p>UC Berkeley · Minor in Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="detail-group">
+            <h3 class="mono detail-heading">Experience</h3>
+            <div class="timeline">
+              <div class="tl-item">
+                <span class="tl-year mono">2021–now</span>
+                <div>
+                  <strong>Senior Engineer — Stripe</strong>
+                  <p>Frontend infrastructure, design systems, developer tooling</p>
+                </div>
+              </div>
+              <div class="tl-item">
+                <span class="tl-year mono">2018–2021</span>
+                <div>
+                  <strong>Lead Developer — Notion</strong>
+                  <p>Real-time collaboration, mobile web, performance</p>
+                </div>
+              </div>
+              <div class="tl-item">
+                <span class="tl-year mono">2016–2018</span>
+                <div>
+                  <strong>Full-Stack Engineer — Vercel</strong>
+                  <p>Deployment pipelines, CDN edge, OSS contributions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ─────────────────────────────────────────────── -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="mono label-tag">Skills</span>
+        <h2 class="section-title">Tools of the trade.</h2>
+      </div>
+      <div class="skills-grid reveal">
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Frontend</h3>
+          <div class="skill-bars">
+            <div class="skill-bar" data-pct="95"><span>React / Next.js</span><div class="bar"><div class="bar-fill"></div></div></div>
+            <div class="skill-bar" data-pct="90"><span>TypeScript</span><div class="bar"><div class="bar-fill"></div></div></div>
+            <div class="skill-bar" data-pct="85"><span>CSS / Animation</span><div class="bar"><div class="bar-fill"></div></div></div>
+            <div class="skill-bar" data-pct="80"><span>Vue / Svelte</span><div class="bar"><div class="bar-fill"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Backend</h3>
+          <div class="skill-bars">
+            <div class="skill-bar" data-pct="92"><span>Node.js / Express</span><div class="bar"><div class="bar-fill"></div></div></div>
+            <div class="skill-bar" data-pct="85"><span>PostgreSQL</span><div class="bar"><div class="bar-fill"></div></div></div>
+            <div class="skill-bar" data-pct="78"><span>GraphQL</span><div class="bar"><div class="bar-fill"></div></div></div>
+            <div class="skill-bar" data-pct="70"><span>Python / FastAPI</span><div class="bar"><div class="bar-fill"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">DevOps &amp; Design</h3>
+          <div class="skill-bars">
+            <div class="skill-bar" data-pct="88"><span>Docker / Kubernetes</span><div class="bar"><div class="bar-fill"></div></div></div>
+            <div class="skill-bar" data-pct="82"><span>AWS / Vercel / GCP</span><div class="bar"><div class="bar-fill"></div></div></div>
+            <div class="skill-bar" data-pct="90"><span>Figma / Design Systems</span><div class="bar"><div class="bar-fill"></div></div></div>
+            <div class="skill-bar" data-pct="75"><span>CI/CD · GitHub Actions</span><div class="bar"><div class="bar-fill"></div></div></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tags-section reveal">
+        <span class="mono detail-heading">Also comfortable with:</span>
+        <div class="tag-cloud">
+          <span class="tag">Redis</span><span class="tag">Prisma</span><span class="tag">tRPC</span>
+          <span class="tag">Storybook</span><span class="tag">Vitest</span><span class="tag">Playwright</span>
+          <span class="tag">WebSockets</span><span class="tag">WebGL</span><span class="tag">D3.js</span>
+          <span class="tag">Stripe API</span><span class="tag">OAuth 2.0</span><span class="tag">Linux</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ───────────────────────────────────────────── -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="mono label-tag">Projects</span>
+        <h2 class="section-title">Selected work.</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card project-card--featured reveal">
+          <div class="project-image pi-1" aria-hidden="true">
+            <div class="pi-code mono">
+              <span class="code-line"><span class="co">const</span> app = <span class="cf">next</span>()<span class="cp">;</span></span>
+              <span class="code-line"><span class="co">app</span>.<span class="cf">get</span>(<span class="cs">'/api'</span>, handler)<span class="cp">;</span></span>
+              <span class="code-line"></span>
+              <span class="code-line"><span class="co">export</span> { app }<span class="cp">;</span></span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta mono">01 · Full-Stack SaaS</div>
+            <h3 class="project-title">Flowboard</h3>
+            <p class="project-desc">
+              A real-time Kanban tool with collaborative editing, AI card suggestions,
+              and a CLI for developers who hate leaving the terminal. 2,400+ active users.
+            </p>
+            <div class="project-stack">
+              <span>Next.js</span><span>tRPC</span><span>PostgreSQL</span><span>WebSockets</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary">Live demo ↗</a>
+              <a href="#" class="btn btn-sm btn-ghost">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay">
+          <div class="project-image pi-2" aria-hidden="true">
+            <div class="pi-visual">
+              <div class="vis-bar" style="height:60%"></div>
+              <div class="vis-bar" style="height:90%"></div>
+              <div class="vis-bar" style="height:45%"></div>
+              <div class="vis-bar" style="height:75%"></div>
+              <div class="vis-bar" style="height:55%"></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta mono">02 · Data Viz</div>
+            <h3 class="project-title">Chartsmith</h3>
+            <p class="project-desc">
+              Open-source charting library built on D3 and Canvas API.
+              Zero dependencies beyond D3. 800+ GitHub stars.
+            </p>
+            <div class="project-stack">
+              <span>TypeScript</span><span>D3.js</span><span>Canvas</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-ghost">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay2">
+          <div class="project-image pi-3" aria-hidden="true">
+            <div class="pi-code mono" style="font-size:0.72rem;">
+              <span class="code-line"><span class="co">SELECT</span> users.*</span>
+              <span class="code-line"><span class="co">FROM</span> users</span>
+              <span class="code-line"><span class="co">JOIN</span> orders</span>
+              <span class="code-line"><span class="co">WHERE</span> arr &gt; <span class="cs">10000</span></span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta mono">03 · Developer Tool</div>
+            <h3 class="project-title">QueryLens</h3>
+            <p class="project-desc">
+              VS Code extension that explains SQL queries in plain English
+              and suggests performance improvements. 15k installs.
+            </p>
+            <div class="project-stack">
+              <span>VS Code API</span><span>Node.js</span><span>GPT-4</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-ghost">Marketplace ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-image pi-4" aria-hidden="true">
+            <div class="pi-globe">
+              <div class="globe-ring"></div>
+              <div class="globe-ring r2"></div>
+              <div class="globe-dot"></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta mono">04 · E-Commerce</div>
+            <h3 class="project-title">Mercantile</h3>
+            <p class="project-desc">
+              Headless storefront for a boutique brand. 98 Lighthouse score.
+              Custom checkout, sub-150ms TTFB via edge rendering.
+            </p>
+            <div class="project-stack">
+              <span>Next.js</span><span>Shopify</span><span>Vercel Edge</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary">Live ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ───────────────────────────────────────── -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="mono label-tag">Testimonials</span>
+        <h2 class="section-title">What others say.</h2>
+      </div>
+      <div class="testi-grid">
+        <blockquote class="testi-card reveal">
+          <p>"Alex doesn't just write code — they build products. The way they think about UX while staying deeply technical is rare and genuinely valuable."</p>
+          <footer>
+            <strong>Jamie Liu</strong>
+            <span class="mono">Engineering Manager, Stripe</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testi-card reveal reveal-delay">
+          <p>"Delivered a complete redesign in 6 weeks. Clean code, zero regressions, and they caught a security issue we'd missed for months."</p>
+          <footer>
+            <strong>Priya Nair</strong>
+            <span class="mono">Founder, Mercantile</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testi-card reveal reveal-delay2">
+          <p>"The open-source work speaks for itself. Thoughtful API design, great documentation, and they actually respond to issues."</p>
+          <footer>
+            <strong>Sam Okoye</strong>
+            <span class="mono">OSS contributor</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────────────────── -->
+  <section class="section contact" id="contact">
+    <div class="container contact-inner">
+      <div class="reveal">
+        <span class="mono label-tag">Contact</span>
+        <h2 class="section-title contact-title">
+          Got a project?<br /><em>Let's build it.</em>
+        </h2>
+        <p class="contact-sub">
+          I'm currently open to senior/lead roles and select freelance engagements.
+          No recruiters please — real humans only.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:hello@alexmorgan.dev" class="contact-link">
+            <span class="mono">hello@alexmorgan.dev</span>
+            <span class="arrow">→</span>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="contact-link">
+            <span class="mono">github.com/alexmorgan</span>
+            <span class="arrow">→</span>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link">
+            <span class="mono">linkedin.com/in/alexmorgan</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form reveal reveal-delay" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name" class="mono">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email" class="mono">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message" class="mono">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Send message →</button>
+        <div class="form-success hidden" id="formSuccess">
+          ✓ Message sent — I'll be in touch within 48 hours.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="mono">© 2025 Alex Morgan</span>
+      <span class="mono footer-center">Designed &amp; built by hand</span>
+      <span class="mono">San Francisco, CA</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
